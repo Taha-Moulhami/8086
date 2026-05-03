@@ -1,0 +1,38 @@
+DATA SEGMENT
+DATA ENDS
+
+CODE SEGMENT
+ASSUME CS:CODE, DS:DATA
+
+DAC_PORT    EQU 200H
+ADC_PORT    EQU 400H
+INTR_PORT   EQU 800H
+
+START:
+    MOV AX, DATA
+    MOV DS, AX
+
+MAIN_LOOP:
+    MOV DX, ADC_PORT
+    MOV al, 0h
+    OUT DX, AL         
+
+WAIT_CONVERSION:
+    MOV DX, INTR_PORT
+    IN  AL, DX
+    TEST AL, 80H        
+    JNZ WAIT_CONVERSION ; Keep polling if high
+
+    ; Read ADC value
+    MOV DX, ADC_PORT
+    IN  AL, DX
+    
+
+    ; Send to DAC 
+    MOV DX, DAC_PORT
+    OUT DX, AL
+
+     JMP MAIN_LOOP
+
+CODE ENDS
+END START
