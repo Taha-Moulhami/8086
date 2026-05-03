@@ -5,7 +5,7 @@
 ## Screenshots
 
 ### Circuit Schematic (Proteus)
-![Schematic](schematic.png)
+![Schematic](schematic.jpg)
 
 ### RAM Output – Simulation Result
 ![RAM Output](ram_output.jpg)
