@@ -1,6 +1,6 @@
 # Serial Communication and USART Interfacing (8251)
 
-![schematic](Screenshot.jpg)
+![schematic](Screenshot.png)
 
 
 ## Overview

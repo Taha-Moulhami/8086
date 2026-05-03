@@ -1,7 +1,7 @@
 # Closed-Loop Control: Sensor-Driven Motor Speed Regulation
 
-![schematic](Screenshot.jpg)
-![schematic](Screenshot1.jpg)
+![schematic](Screenshot.png)
+![schematic](Screenshot1.png)
 
 
 ## Overview

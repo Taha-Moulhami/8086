@@ -1,6 +1,6 @@
 # Closed-Loop Control: Sensor-Driven Motor Speed Regulation
 
-![schematic](Screenshot.jpg)
+![schematic](screenshot.png)
 
 ## Overview
 This project implements a real-time control system that bridges an analog sensor input with an analog actuator output using an 8086 microprocessor. The system regulates the speed of a dual-motor robot based on light intensity detected by a Light Dependent Resistor (LDR).

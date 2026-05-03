@@ -1,6 +1,6 @@
 # Hardware Interfacing: 8255 PPI and 7-Segment Control
 
-![schematic](Screenshot.jpg)
+![schematic](Screenshot.png)
 
 
 ## Overview
